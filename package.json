@@ -1,0 +1,23 @@
+{
+  "name": "sisdis_hw1",
+  "version": "1.0.0",
+  "description": "simple http server with socket programming",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jundialwan/node-socket.git"
+  },
+  "author": "Jundi Alwan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jundialwan/node-socket/issues"
+  },
+  "homepage": "https://github.com/jundialwan/node-socket#readme",
+  "dependencies": {
+    "md5": "^2.2.1",
+    "mime": "^1.4.0"
+  }
+}

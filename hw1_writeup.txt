@@ -1,0 +1,20 @@
+Homework 1 - Sistem Terdistribusi
+Jundi Ahmad Alwan
+1306464114
+
+Cara menjalankan kode:
+1. Pastikan komputer sudah terinstall nodejs
+2. Jalankan comman 'npm install' untuk install node_modules terlebih dahulu
+3. Jalankan command 'node app.js' pada terminal/cmd
+4. Akses halaman pada alamat 'localhost:17845'
+
+Hal-hal yang telah dipelajari:
+Pada HW1 ini saya mempelajari banyak hal.
+Pertama, saya mempelajari bagaimana sebuah HTTP Headers bekerja.
+Sebelumnya saya tidak terlalu menghiraukan fungsi/makna dari HTTP Headers namun ternyata HTTP Headers lah inti dari sebuah request dan response.
+Saya semakin mengetahui fungsi dari masing-masing header yang ada pada HTTP Headers dan bagimana cara kerja HTTP Request/Respond lebih baik.
+
+Saya juga mempelajari lebih dalam tentang nodejs itu sendiri.
+Nodejs mengimplementasikan multi-threading dalam I/O-nya sehingga aktivitas dan operasi I/O menjadi sangat cepat, tidak blocking.
+Namun proses dari nodejs itu sendiri single-threaded seperti JavaScript yang dijalankna pada browser umumnya karena engine yang digunakan sama, yaitu v8.
+Hal ini menyebabkan saya tidak bisa mengimplementasikan soal bonus untuk mengimplementasikan multi-threading, karena memang tidak bisa dilakukan lagi.
