@@ -2,10 +2,11 @@ const net = require('net'),
       fs = require('fs'),
       mime = require('mime'),
       qs = require('querystring'),
-      md5 = require('md5');
+      md5 = require('md5'),
+      config = require('./config');
 
-const PORT = 17845,
-      HOST = '127.0.0.1';
+const PORT = config.port,
+      HOST = config.host;
 
 const parseHttpHeaders = (req) => {
   try {
