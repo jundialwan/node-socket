@@ -115,9 +115,13 @@ const connectionListener = (socket) => {
               file = './hello-world.html';
 
               fs.readFile(file, (err, data) => {
-                socket.write(`${buildStatusLine()}\r\nConnection: close\r\nContent-Type: ${mime.lookup(file)}\r\nContent-Length: ${data.byteLength}\r\n\r\n`);
-                socket.write(data);   
-                socket.destroy();             
+                if (err) {
+                  console.log(err);
+                } else {
+                  socket.write(`${buildStatusLine()}\r\nConnection: close\r\nContent-Type: ${mime.lookup(file)}\r\nContent-Length: ${data.byteLength}\r\n\r\n`);
+                  socket.write(data);   
+                  socket.destroy();             
+                }
               });              
             } else {                            
               if (reqHeadersObj['content-type'] === 'application/x-www-form-urlencoded') {
